@@ -60,6 +60,9 @@ FFMPEG: 已启用 OpenCV 和 FFMPEG 支持
 ```
 ## 📖模型资源
 本项目中训练得到的Lora模型如下，其他模型可通过HuggingFace或哩布哩布官网进行下载
+-[百度网盘](通过网盘分享的文件：flux_lora_QAZWSXroadcrack_rank16_bf16-step03000.safetensors
+链接: https://pan.baidu.com/s/1Dh3qFp-6DjgOpU_LLDWGgQ?pwd=gnws 提取码: gnws 
+--来自百度网盘超级会员v5的分享)
 # ⭕致谢
 感谢以下项目对本项目的支撑：  
 -[ComfyUI](https://github.com/comfyanonymous/ComfyUI)  
