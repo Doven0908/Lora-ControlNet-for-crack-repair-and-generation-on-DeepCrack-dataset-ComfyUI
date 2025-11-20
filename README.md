@@ -58,8 +58,8 @@ FFMPEG: 已启用 OpenCV 和 FFMPEG 支持
   doi={10.1016/j.neucom.2019.01.036}
 }
 ```
-## 模型资源
-
+## 📖模型资源
+本项目中训练得到的Lora模型如下，其他模型可通过HuggingFace或哩布哩布官网进行下载
 # ⭕致谢
 感谢以下项目对本项目的支撑：  
 -[ComfyUI](https://github.com/comfyanonymous/ComfyUI)  
