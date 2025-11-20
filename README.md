@@ -27,7 +27,7 @@ FFMPEG: 已启用 OpenCV 和 FFMPEG 支持
 ## 依赖项
 其中conda环境可通过![依赖](requirements.txt) 进行添加
 # ⭕项目介绍
-下面对不同项目进行简要介绍：
+下面对不同子任务进行简要介绍：
 ## 1️⃣基于SDXL+ControlNet的遮罩约束写实风格迁移
 本任务基于SDXL和ControlNet模型搭建工作流进行不同prompt下遮罩约束的写实风格迁移，具体工作流如图： ![工作流1](./task_1/workflow_1.png)   
 通过ComfyScript进行工作流的翻译后，使用![脚本](./task_1/src/task1_script.py) 进行跑图，示例结果如图： ![结果1](./task_1/results/example.png) 
@@ -42,3 +42,27 @@ FFMPEG: 已启用 OpenCV 和 FFMPEG 支持
 ## 4️⃣基于FLUX.1 Kontext+ControlNet的裂纹生成
 本任务在上一步基础上将lora模型串联到controlnet工作流中对裂纹简单的base图片进行遮罩合成，通过裂纹复杂的遮罩叠加，生成裂纹合成图片，基本工作流框架如图： ![工作流4](./task_4/workflow_4.png)  
 通过ComfyScript进行工作流的翻译后，使用![脚本](./task_4/src/task4_script.py) 进行跑图，示例结果如图： ![结果4](./task_4/results/example.png) 
+## demo演示
+不同任务工作流中噪声叠加和去噪过程可通过demo演示视频进行浏览 ![demo](Demo.mp4)
+# ⭕资源基础
+## 🧾数据集
+本项目所使用裂纹和遮罩数据集来自于DeepCrack裂纹分割项目，具体使用可参考  
+```bibtext
+@article{liu2019deepcrack,
+  title={DeepCrack: A Deep Hierarchical Feature Learning Architecture for Crack Segmentation},
+  author={Liu, Yahui and Yao, Jian and Lu, Xiaohu and Xie, Renping and Li, Li},
+  journal={Neurocomputing},
+  volume={338},
+  pages={139--153},
+  year={2019},
+  doi={10.1016/j.neucom.2019.01.036}
+}
+```
+## 模型资源
+
+# ⭕致谢
+感谢以下项目对本项目的支撑：  
+-[ComfyUI](https://github.com/comfyanonymous/ComfyUI)  
+-[ControlNet](https://github.com/lllyasviel/ControlNet?utm_source=chatgpt.com)  
+-[FLUX.1](https://github.com/black-forest-labs/flux)  
+-[ComfyScript](https://github.com/Chaoses-Ib/ComfyScript?utm_source=chatgpt.com)
